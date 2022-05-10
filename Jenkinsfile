@@ -19,7 +19,7 @@ pipeline {
         }
         stage ("A dormir un rato") {
             steps {
-                sh "sleep 60"
+                sh "exit 1; sleep 60"
             }
         }
     }
