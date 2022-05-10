@@ -8,12 +8,12 @@ pipeline {
             }
         }
 
-        stage ("A cotillear el disco") {
+        stage ("Test") {
+            when { branch "PR-*" }
             steps {
                 sh """
-                hostname
-                pwd
-                ls -la
+                echo 'Fallando los test'
+                exit 1
                 """
             }
         }
