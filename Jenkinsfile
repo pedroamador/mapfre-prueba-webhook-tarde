@@ -17,10 +17,5 @@ pipeline {
                 """
             }
         }
-        stage ("A dormir un rato") {
-            steps {
-                sh "exit 1; sleep 60"
-            }
-        }
     }
 }
